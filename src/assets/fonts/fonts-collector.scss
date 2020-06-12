@@ -11,11 +11,11 @@
   }
 }
 
- @include font-face("Montserrat", "./../../fonts/Montserrat-Regular");
-// @include font-face("Montserrat", "./assets/fonts/Montserrat-Bold", bold);
+ @include font-face("Montserrat", "./assets/fonts/Montserrat-Regular");
+ @include font-face("Montserrat", "./assets/fonts/Montserrat-Bold", bold);
 
-// @include font-face("Quicksand", "./assets/fonts/OpenSans-Bold", bold);
-// @include font-face("Quicksand", "./assets/fonts/OpenSans-Regular");
+ @include font-face("Quicksand", "./assets/fonts/OpenSans-Bold", bold);
+ @include font-face("Quicksand", "./assets/fonts/OpenSans-Regular");
 
 // @font-face {
 //   font-family: 'Montserrat';
