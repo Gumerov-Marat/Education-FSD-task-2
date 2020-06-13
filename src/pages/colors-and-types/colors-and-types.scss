@@ -1,8 +1,15 @@
-@import './../template/template';
+@import '../template/template';
 @import '../../components/logo/logo';
+@import "../template/fonts-collector";
+
+
 body {
   width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
 }
+
 
 .free-space {
   content: '';
@@ -26,11 +33,13 @@ body {
   }
 
   &__column:first-child {
-    padding-left: 9.8%;
+    padding-top: 8px;
+    padding-left: 11.8%;
   }
 
   &__column:last-child {
-    padding-right: 9.8%;
+    padding-right: 2.35%;
+    padding-bottom: 5%;
   }
 
   &__block-color-wrap {
@@ -63,6 +72,7 @@ body {
     padding: 0;
     line-height: 29px;
     font-size: 19px;
+    letter-spacing: 0px;
   }
 
   &__hex-color {
@@ -75,30 +85,75 @@ body {
   }
 }
 
+h1,
+h2,
+h3 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
 .block-types {
   display: flex;
   justify-content: space-between;
   width: 403px;
+  text-align: justify;
+  padding-top: 8px;
+
+  &:first-child {
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 45px;
+  }
+
+  &:nth-child(2) {
+    font-size: 19px;
+    line-height: 23px;
+    text-align: left;
+    padding-bottom: 45px;
+  }
+
+  &:nth-child(3) {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+  }
+
+  &:last-child {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    word-wrap: break-word;
+    width: 403spx;
+  }
 
   &__title {
     width: 37px;
-    text-align: right;
+    text-align: center;
     color: $DarkShade25;
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: normal;
+    padding-left: 5px;
 
-    // &:nth-child(1) {
-    //   font-size: 24px;
-    //   line-height: 29px;
-    // }
 
-    // &:nth-child(2) {
-    //   font-size: 19px;
-    //   line-height: 23px;
-    // }
   }
 
-  
   &__description {
     width: 336px;
   }
+
+}
+.block-types>p:last-of-type {
+  color: green;
+  border: 1px solid orange;
+  
 }
