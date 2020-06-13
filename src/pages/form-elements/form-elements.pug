@@ -1,5 +1,8 @@
 extends ./../template/template.pug
 
+//- mixin free-space(props={})    задает отступ по ширине и/или высоте
+//- mixin block-lib(props={})               размещение блока без собственного заголовка
+//- mixin block-lib-self-title(props={})    размещение блока с собственным заголовком
 
 block meta
   meta(name="keywords", content="toxin, form elements")
@@ -7,5 +10,16 @@ block meta
 
 block title
   | Form Elements
+
+block main
+  section.elements
+    .elements__logo
+      +logo({mods: 'gray'})
+  +free-space({height: '60px'})
+
+   section.elements
+    .elements__column
+      +block-lib({title: 'TEXT FIELD', mods:'DEFAULT', width: '320px'})
+        +text-field({placeholder: 'Email'})
 
 

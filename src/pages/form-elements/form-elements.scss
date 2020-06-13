@@ -1,0 +1,24 @@
+@import '../template/template';
+@import '../../components/logo/logo';
+
+
+body {
+  width: 100%;
+}
+
+.free-space {
+  content: '';
+}
+
+.elements {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+
+  &__logo {
+    padding-top: 33px;
+    padding-left: 30px;
+  }
+}
