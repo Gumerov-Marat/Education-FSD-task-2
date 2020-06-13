@@ -3,7 +3,7 @@ extends ./pages/template/template.pug
 
 append vars
   -
-    //const pageFormElement = {linkPage: 'form-elements.html', namePage: 'FORM ELEMENTS'}
+    const pageFormElement = {linkPage: 'form-elements.html', namePage: 'FORM ELEMENTS'}
     const pageColorTypes = {linkPage: 'colors-and-types.html', namePage: 'COLOR & TYPES'}
     // const pageCards = {linkPage: 'cards.html', namePage: 'CARDS'}
     // const pageHeaderFooters = {linkPage: 'headers-and-footers.html', namePage: 'HEADER & FOOTERS'}
@@ -11,7 +11,7 @@ append vars
     // const pageSearchRoom = {linkPage: 'search-room.html', namePage: 'SEARCH ROOM'}
     // const pageRoomDetails = {linkPage: 'room-details.html', namePage: 'ROOM DETAILS'}
 
-    const pageList = [pageColorTypes]
+    const pageList = [pageColorTypes, pageFormElement]
     //const pageList = [pageLandingPage, pageSearchRoom, pageRoomDetails, pageColorTypes, pageFormElement, pageCards, pageHeaderFooters]
 
 
