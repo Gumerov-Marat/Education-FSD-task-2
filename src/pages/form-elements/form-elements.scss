@@ -18,7 +18,12 @@ body {
   max-width: 1440px;
 
   &__logo {
-    padding-top: 33px;
-    padding-left: 30px;
+    padding-top: 35px;
+    padding-left: 23px;
+  }
+
+  &__column {
+    flex-basis: 320px;
+    border: 1px solid red;
   }
 }
