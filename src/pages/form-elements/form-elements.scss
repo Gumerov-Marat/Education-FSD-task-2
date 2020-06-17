@@ -1,32 +1,32 @@
-@import '../template/template';
-@import '../../components/logo/logo';
+// @import '../template/template';
+// @import '../../components/logo/logo';
 
 
-body {
-  width: 100%;
-}
+// body {
+//   width: 100%;
+// }
 
-.free-space {
-  content: '';
-}
+// .free-space {
+//   content: '';
+// }
 
-.elements {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1440px;
+// .elements {
+//   display: flex;
+//   flex-wrap: nowrap;
+//   justify-content: space-between;
+//   margin: 0 auto;
+//   max-width: 1440px;
 
-  &__logo {
-    padding-top: 35px;
-    padding-left: 23px;
-  }
+//   &__logo {
+//     padding-top: 35px;
+//     padding-left: 23px;
+//   }
 
-  &__column {
-    flex-basis: 320px;
-  }
-}
+//   &__column {
+//     flex-basis: 320px;
+//   }
+// }
 
-p {
-  color: red;  
-}
+// p {
+//   color: red;  
+// }

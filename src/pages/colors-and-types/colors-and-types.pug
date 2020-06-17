@@ -1,6 +1,7 @@
 extends ./../template/template.pug
 
 
+
 //- mixin block-color(props={})   блок с примерами цвета
 //- mixin color-side(props={})    размещает сторону с цветными блоками. Использует block-color
 //- mixin type-side(props = {})   размещает сторону с описанием тегов и примерами шрифтов
@@ -17,13 +18,14 @@ block title
 
 
 block main
-  section.elements
-    .elements__logo
+
+  section(class="" +elements_C_and_T )
+    .elements-color-and-type__logo
       +logo({mods: 'gray'})
   +free-space({height: '60px'})
 
-  section.elements
-    .elements__column
+  section(class="" +elements_C_and_T )
+    .elements-color-and-type__column
       +color-side({
         colorStrings: [
           {
@@ -61,7 +63,7 @@ block main
         ]
         })
 
-    .elements__column
+    .elements-color-and-type__column
       +type-side({
         typeStrings: [
           {
