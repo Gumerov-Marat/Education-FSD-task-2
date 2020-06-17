@@ -25,4 +25,9 @@ block main
       +block-lib({title: 'TEXT FIELD', mods:'HOVER / FOCUS', width: '320px'})
         +text-field({mods: 'focused', placeholder: 'This is pretty awesome'})
 
+      //- повтор блока , переделать
       +block-lib({title: 'DROPDOWN', mods: 'DEFAULT', width: '320px'})
+        +text-field({mods: 'focused', placeholder: 'This is pretty awesome'})
+      
+      +block-lib({title: 'MASKED-TEXT-FIELD', mods: 'DEFAULT', width: '320px'})
+        +masked-text-field({placeholder: 'ДД.ММ.ГГГ', maskType: 'date'})
