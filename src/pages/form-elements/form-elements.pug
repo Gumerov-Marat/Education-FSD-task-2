@@ -18,6 +18,16 @@ block main
   +free-space({height: '60px'})
 
   section(class="" +elements_F_E )
-    .elements-form-elements__column тест
+    .elements-form-elements__column
+      +block-lib({title: 'TEXT FIELD', mods:'DEFAULT', width: '320px'})
+        +text-field({placeholder: 'Email'})
 
+      +block-lib({title: 'TEXT FIELD', mods:'HOVER / FOCUS', width: '320px'})
+        +text-field({mods: 'focused', placeholder: 'This is pretty awesome'})
 
+      //- повтор блока , переделать
+      +block-lib({title: 'DROPDOWN', mods: 'DEFAULT', width: '320px'})
+        +text-field({mods: 'focused', placeholder: 'This is pretty awesome'})
+      
+      +block-lib({title: 'MASKED-TEXT-FIELD', mods: 'DEFAULT', width: '320px'})
+        +masked-text-field({placeholder: 'ДД.ММ.ГГГ', maskType: 'date'})
