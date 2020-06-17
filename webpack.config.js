@@ -44,7 +44,6 @@ const common = merge([{
             }),
             new HtmlWebpackPlugin({
                 filename: 'form-elements.html',
-                chunks: ['form-elements', 'common'],
                 template: PATHS.source + '/pages/form-elements/form-elements.pug'
             }),
 

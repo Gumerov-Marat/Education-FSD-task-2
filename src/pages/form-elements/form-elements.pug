@@ -1,4 +1,4 @@
-extends ./../template/template.pug
+extends ../template/template.pug
 
 //- mixin free-space(props={})    задает отступ по ширине и/или высоте
 //- mixin block-lib(props={})               размещение блока без собственного заголовка
@@ -12,14 +12,12 @@ block title
   | Form Elements
 
 block main
-  section.elements
-    .elements__logo
+  section(class="" +elements_F_E )
+    .elements-form-elements__logo
       +logo({mods: 'gray'})
   +free-space({height: '60px'})
 
-   section.elements
-    .elements__column
-      +block-lib({title: 'TEXT FIELD', mods:'DEFAULT', width: '320px'})
-        +text-field({placeholder: 'Email'})
+  section(class="" +elements_F_E )
+    .elements-form-elements__column тест
 
 
