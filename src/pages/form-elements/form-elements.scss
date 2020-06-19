@@ -29,11 +29,19 @@ body {
 
   &__column {
     flex-basis: 320px;
-    border: 1px solid rgb(36, 35, 128);
+    border: 2px solid rgb(36, 35, 128);
+  }
+
+  &__column:nth-child(2) {
+    padding-left: 3.6%;
   }
 
   &__column:first-child {
     padding-left: 9.3%;
+  }
+
+  &__column:last-child {
+    padding-right: 10.3%;
   }
 }
 
