@@ -65,7 +65,7 @@ block main
       +block-lib({title: 'SUBSCRIPTION TEXT FIELD', width: '266px'})
         +subscription-text-field({placeholder: 'Email'})
 
-
+    //-средний блок
     .elements-form-elements__column
       +block-lib-self-title({width: '222px'})
           +checkbox-buttons({
@@ -83,15 +83,33 @@ block main
               ]
             })
       +free-space({height: '22px'})
-
-      +free-space({height: '22px'})
       +block-lib-self-title({width: '220px'})
-      //-радиобаттон
+        +radio-buttons({
+          labelTitle: 'radio buttons',
+          radioButtonsSet: 'radio-battons-test',
+          buttonsList: [
+            {buttonTitle: 'Мужчина',
+            buttonValue: 'man',
+            checked: true},
+            {buttonTitle: 'Женщина',
+            buttonValue: 'woman'}
+            ]
+          })
 
       +free-space({height: '16px'})
       +block-lib({title: 'TOGGLE', width: '320px'})
         +free-space({height: '10px'})
-        //- получатель спец предложения
+        +toggle({
+          labelTitle: 'Получать спецпредложения',
+          moduleClass: 'field-toggle-test',
+          checked: true
+          })
+        +free-space({height: '15px'})
+        +toggle({
+          labelTitle: 'Получать спецпредложения',
+          moduleClass: 'field-toggle-test',
+          checked: false
+          })
 
       +free-space({height: '24px'})
       +block-lib({title: 'LIKE BUTTON', width: '90px'})
