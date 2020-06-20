@@ -26,12 +26,26 @@ block main
       +block-lib({title: 'TEXT FIELD', mods:'HOVER / FOCUS', width: '320px'})
         +text-field({mods: 'focused', placeholder: 'This is pretty awesome'})
 
-      //- повтор блока , переделать
       +block-lib({title: 'DROPDOWN', mods: 'DEFAULT', width: '320px'})
-        +text-field({mods: 'focused', placeholder: 'This is pretty awesome'})
+        +dropdown({
+          moduleClass: 'dropdown-visitors',
+          isBtnClear: true,
+          isBtnSubmit: true,
+          dropStrings: [
+            {lineTitle: 'ВЗРОСЛЫЕ', maxCount: '5'},
+            {lineTitle: 'ДЕТИ', maxCount: '5'},
+            {lineTitle: 'МЛАДЕНЦЫ', maxCount: '5',
+            isCountSeparate: true,
+            namingForCount: 'младенец,младенца,младенцев'}
+          ],
+          namingForAll: 'гость,гостя,гостей',
+          namingForEmpty: 'Сколько гостей'
+          })
 
       +block-lib({title: 'MASKED-TEXT-FIELD', mods: 'DEFAULT', width: '320px'})
-        +masked-text-field({placeholder: 'ДД.ММ.ГГГ', maskType: 'date'})
+        +masked-text-field({
+          placeholder: 'ДД.ММ.ГГГ',
+          maskType: 'date'})
 
       +block-lib({width: '320px'})
         +free-space({height: '14px'})
