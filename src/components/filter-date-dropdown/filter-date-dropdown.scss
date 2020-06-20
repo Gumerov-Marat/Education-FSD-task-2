@@ -1,14 +1,14 @@
-// @import '../masked-text-field/masked-text-field';
+@import '../masked-text-field/masked-text-field';
 
-// .filter-date-dropdown {
-//   box-sizing: border-box;
-//   position: relative;
-//   display: inline-block;
-//   width: 100%;
+.filter-date-dropdown {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 100%;
 
-//   &__marker {
-//     position: absolute;
-//     right: 0.625rem;
-//     top: 0.625rem;
-//   }
-// }
+  &__marker {
+    position: absolute;
+    right: 0.625rem;
+    top: 0.625rem;
+  }
+}
